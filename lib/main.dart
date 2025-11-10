@@ -140,49 +140,6 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const Spacer(),
-                
-                // Información sobre la estructura del proyecto
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.indigo.shade50,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.indigo.shade200),
-                  ),
-                  child: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.folder, color: Colors.indigo),
-                          SizedBox(width: 8),
-                          Text(
-                            'Estructura del proyecto:',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 12),
-                      Text(
-                        '📁 lib/\n'
-                        '  ├── main.dart (navegación principal)\n'
-                        '  ├── 📁 models/\n'
-                        '  │   ├── counter.dart\n'
-                        '  │   └── user.dart\n'
-                        '  └── 📁 screens/\n'
-                        '      ├── counter_screen.dart\n'
-                        '      └── user_profile_screen.dart',
-                        style: TextStyle(
-                          fontFamily: 'monospace',
-                          fontSize: 12,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
               ],
             ),
           ),
